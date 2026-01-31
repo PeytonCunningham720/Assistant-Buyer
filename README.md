@@ -225,7 +225,7 @@ If I were to continue developing this project, here's what I'd add:
 
 ## 🤝 Let's Connect!
 
-I'm excited about the opportunity to bring these analytical skills to Movement's retail team. Supporting the buying and allocation process is the kind of detail-oriented, data-driven work that I thrive on — and doing it for a brand I believe in as both an employee and a climber makes it even more meaningful.
+I'm excited about the opportunity to bring these analytical skills to Movement's retail team. Supporting the buying and allocation process is the kind of detail-oriented, data-driven work that I thrive on, and doing it for a company I believe in as both an employee and a climber makes it even more meaningful.
 
 I'd love to discuss how my skills will support Movement's mission of growth, connection, and integrity.
 

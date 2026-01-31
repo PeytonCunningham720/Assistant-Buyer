@@ -1,0 +1,32 @@
+sku,name,category,subcategory,vendor,cost,retail,size_run,margin_pct,margin_dollars
+SH-001,La Sportiva Tarantula,Climbing Shoes,Beginner,La Sportiva,45.0,89.95,True,50.0,44.95
+SH-002,La Sportiva Finale,Climbing Shoes,Beginner,La Sportiva,50.0,99.95,True,50.0,49.95
+SH-003,La Sportiva Solution,Climbing Shoes,Advanced,La Sportiva,95.0,189.95,True,50.0,94.95
+SH-004,Evolv Defy,Climbing Shoes,Beginner,Evolv,40.0,79.95,True,50.0,39.95
+SH-005,Evolv Shaman,Climbing Shoes,Advanced,Evolv,85.0,169.95,True,50.0,84.95
+SH-006,Scarpa Instinct VS,Climbing Shoes,Advanced,Scarpa,90.0,179.95,True,50.0,89.95
+SH-007,Black Diamond Momentum,Climbing Shoes,Beginner,Black Diamond,42.0,84.95,True,50.6,42.95
+HR-001,Petzl Corax,Harnesses,All-Around,Petzl,32.0,64.95,False,50.7,32.95
+HR-002,Black Diamond Momentum Harness,Harnesses,All-Around,Black Diamond,30.0,59.95,False,50.0,29.95
+HR-003,Petzl Sitta,Harnesses,Performance,Petzl,70.0,139.95,False,50.0,69.95
+HR-004,Mammut Ophir 4 Slide,Harnesses,All-Around,Mammut,35.0,69.95,False,50.0,34.95
+CH-001,FrictionLabs Unicorn Dust,Chalk,Loose Chalk,FrictionLabs,10.0,21.95,False,54.4,11.95
+CH-002,FrictionLabs Gorilla Grip,Chalk,Chunky Chalk,FrictionLabs,12.0,24.95,False,51.9,12.95
+CH-003,Metolius Super Chalk,Chalk,Loose Chalk,Metolius,4.0,9.95,False,59.8,5.95
+CH-004,Black Diamond White Gold,Chalk,Loose Chalk,Black Diamond,5.0,11.95,False,58.2,6.95
+BD-001,Petzl GriGri+,Belay Devices,Assisted Braking,Petzl,55.0,109.95,False,50.0,54.95
+BD-002,Black Diamond ATC-XP,Belay Devices,Tubular,Black Diamond,12.0,24.95,False,51.9,12.95
+BD-003,Mammut Smart 2.0,Belay Devices,Assisted Braking,Mammut,15.0,29.95,False,49.9,14.95
+CB-001,Petzl Attache,Carabiners,Locking,Petzl,8.0,16.95,False,52.8,8.95
+CB-002,Black Diamond RockLock,Carabiners,Locking,Black Diamond,7.0,14.95,False,53.2,7.95
+CB-003,Petzl Djinn Quickdraw,Carabiners,Quickdraw,Petzl,12.0,24.95,False,51.9,12.95
+CB-101,Metolius Competition Chalk Bag,Chalk Bags,Standard,Metolius,8.0,17.95,False,55.4,9.95
+CB-102,Mammut Gym Print Chalk Bag,Chalk Bags,Standard,Mammut,10.0,21.95,False,54.4,11.95
+CB-103,Black Diamond Mojo Chalk Bag,Chalk Bags,Standard,Black Diamond,9.0,19.95,False,54.9,10.95
+RP-001,Beal Stinger III 9.4mm,Ropes,Single Rope,Beal,95.0,189.95,False,50.0,94.95
+RP-002,Mammut Crag Classic 9.8mm,Ropes,Single Rope,Mammut,80.0,159.95,False,50.0,79.95
+AP-001,prAna Stretch Zion Pant,Apparel,Pants,prAna,40.0,85.0,False,52.9,45.0
+AP-002,prAna Bridger Jean,Apparel,Pants,prAna,35.0,75.0,False,53.3,40.0
+AP-003,Movement Logo Tee,Apparel,Tops,prAna,8.0,25.0,False,68.0,17.0
+TR-001,Metolius Simulator 3D,Training,Hangboard,Metolius,20.0,44.95,False,55.5,24.95
+TR-002,Metolius Rock Rings,Training,Grip Trainer,Metolius,15.0,34.95,False,57.1,19.95
