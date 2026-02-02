@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore')
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'output')
 CHARTS_DIR = os.path.join(OUTPUT_DIR, 'charts')
 DATA_DIR = os.path.join(OUTPUT_DIR, 'data')
 
