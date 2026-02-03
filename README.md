@@ -158,7 +158,12 @@ The script will generate fresh data, run all analyses, and save outputs to the `
 Assistant-Buyer/
 │
 ├── src/
-│   └── main.py              # The main analysis script (fully commented!)
+│   ├── config.py          # All constants, colors, and data definitions
+│   ├── data_generator.py  # Synthetic data generation functions
+│   ├── chart_utils.py     # Reusable chart styling helpers
+│   ├── charts.py          # All visualization functions
+│   ├── summary.py         # Summary report generation
+│   └── main.py            # Entry point - orchestrates everything
 │
 ├── output/
 │   ├── charts/              # 13 PNG visualizations ready for presentations (PNG files)

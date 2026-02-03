@@ -14,7 +14,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-from config import (
+from src.config import (
     RANDOM_SEED, GYM_LOCATIONS, VENDORS, PRODUCTS,
     SIZE_MULTIPLIERS, SIZE_CAPACITY, CATEGORY_FREQUENCY, SEASONALITY
 )

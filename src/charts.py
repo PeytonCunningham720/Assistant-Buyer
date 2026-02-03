@@ -17,8 +17,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-from config import COLORS, CHARTS_DIR, apply_plot_style
-from chart_utils import (
+from src.config import COLORS, CHARTS_DIR, apply_plot_style
+from src.chart_utils import (
     draw_kpi_card, style_barh, style_chart_basic,
     get_threshold_colors, format_currency_axis
 )

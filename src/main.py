@@ -25,14 +25,14 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Import project modules
-from config import DATA_DIR, apply_plot_style
-from data_generator import (
+from src.config import DATA_DIR, apply_plot_style
+from src.data_generator import (
     get_base_dataframes,
     generate_sales_data,
     generate_inventory_data,
     generate_po_data
 )
-from charts import (
+from src.charts import (
     create_executive_dashboard,
     create_sales_by_category,
     create_sales_by_region,
@@ -47,7 +47,7 @@ from charts import (
     create_po_pipeline,
     create_shoe_deep_dive
 )
-from summary import print_summary
+from src.summary import print_summary
 
 
 def main():
