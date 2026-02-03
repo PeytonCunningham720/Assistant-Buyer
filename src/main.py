@@ -65,7 +65,7 @@ def main():
     # ─────────────────────────────────────────────────────────────────────
     # STEP 1: GENERATE DATA
     # ─────────────────────────────────────────────────────────────────────
-    print("\n📦 Generating synthetic retail data...")
+    print("\n Generating synthetic retail data...")
     
     # Get base DataFrames from config
     gyms_df, products_df = get_base_dataframes()
@@ -90,7 +90,7 @@ def main():
     products_df.to_csv(os.path.join(DATA_DIR, 'product_catalog.csv'), index=False)
     gyms_df.to_csv(os.path.join(DATA_DIR, 'gym_locations.csv'), index=False)
     
-    print("\n💾 Raw data exported to output/data/")
+    print("\n Raw data exported to output/data/")
     
     # ─────────────────────────────────────────────────────────────────────
     # STEP 3: CREATE VISUALIZATIONS

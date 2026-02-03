@@ -86,19 +86,19 @@ def create_executive_dashboard(sales_df, inventory_df, po_df):
     
     cards = [
         {'label': 'Total Revenue', 'value': f'${total_revenue/1e6:.2f}M',
-         'subtitle': f'Gross Margin {margin_pct:.1f}%', 'icon': '💰',
+         'subtitle': f'Gross Margin {margin_pct:.1f}%',
          'color': COLORS['accent']},
         {'label': 'Gross Margin', 'value': f'${total_margin/1e6:.2f}M',
-         'subtitle': f'{margin_pct:.1f}% of Revenue', 'icon': '📈',
+         'subtitle': f'{margin_pct:.1f}% of Revenue',
          'color': COLORS['success']},
         {'label': 'In-Stock Rate', 'value': f'{in_stock_rate:.1f}%',
-         'subtitle': f'{oos_count} SKU-locations OOS', 'icon': '📦',
+         'subtitle': f'{oos_count} SKU-locations OOS',
          'color': COLORS['success'] if in_stock_rate >= 85 else COLORS['warning']},
         {'label': 'Inventory at Cost', 'value': f'${total_inv_cost/1e6:.2f}M',
-         'subtitle': f'Retail: ${total_inv_retail/1e6:.2f}M', 'icon': '🏬',
+         'subtitle': f'Retail: ${total_inv_retail/1e6:.2f}M',
          'color': COLORS['purple']},
         {'label': 'Vendor On-Time %', 'value': f'{overall_otd:.1f}%',
-         'subtitle': f'{len(po_df)} POs Tracked', 'icon': '🚚',
+         'subtitle': f'{len(po_df)} POs Tracked',
          'color': COLORS['teal'] if overall_otd >= 90 else COLORS['warning']},
     ]
     

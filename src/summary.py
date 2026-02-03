@@ -22,7 +22,7 @@ def print_summary(sales_df, inventory_df, po_df):
         po_df: Purchase order history
     """
     print("\n" + "=" * 70)
-    print("📋 SUMMARY OF KEY FINDINGS")
+    print("SUMMARY OF KEY FINDINGS")
     print("=" * 70)
     
     # ─────────────────────────────────────────────────────────────────────
@@ -32,7 +32,7 @@ def print_summary(sales_df, inventory_df, po_df):
     total_cost_sold = sales_df['cost'].sum()
     total_gm = total_rev - total_cost_sold
     
-    print(f"\n💰 REVENUE & MARGIN")
+    print(f"\n REVENUE & MARGIN")
     print(f"   Total Revenue (12 months):      ${total_rev:>12,.2f}")
     print(f"   Total Cost of Goods Sold:        ${total_cost_sold:>12,.2f}")
     print(f"   Gross Margin:                    ${total_gm:>12,.2f} ({total_gm/total_rev*100:.1f}%)")
@@ -45,7 +45,7 @@ def print_summary(sales_df, inventory_df, po_df):
     # ─────────────────────────────────────────────────────────────────────
     # INVENTORY HEALTH
     # ─────────────────────────────────────────────────────────────────────
-    print(f"\n📦 INVENTORY HEALTH")
+    print(f"\n INVENTORY HEALTH")
     
     total_inv = inventory_df['inventory_value_cost'].sum()
     in_stock = (inventory_df['stock_status'].isin(['In Stock', 'Overstock']).sum() 
