@@ -156,31 +156,24 @@ The script will generate fresh data, run all analyses, and save outputs to the `
 
 ```
 retail_analysis/
-├── config.py              # All constants, colors, and data definitions
-├── data_generator.py      # Synthetic data generation functions
-├── chart_utils.py         # Reusable chart styling helpers
-├── summary.py             # Summary report generation
-├── main.py                # Entry point - run this
-├── README.md
-├── .gitignore
-├── visualizations/        # One file per chart
-│   ├── __init__.py
-│   ├── executive_dashboard.py
-│   ├── sales_by_category.py
-│   ├── sales_by_region.py
-│   ├── margin_analysis.py
-│   ├── monthly_trends.py
-│   ├── top_bottom_sellers.py
-│   ├── instock_by_gym.py
-│   ├── inventory_status.py
-│   ├── aged_inventory.py
-│   ├── allocation_analysis.py
-│   ├── vendor_scorecard.py
-│   ├── po_pipeline.py
-│   └── shoe_deep_dive.py
-└── output/
+├── output/
     ├── charts/            # Generated PNG visualizations
     └── data/              # Exported CSV data files
+├── src
+    ├── visulations/       #13 .py files containing visualizations scripts
+           ├── __init__.py
+           ├── executive_dashboard.py
+           └──  ...
+    ├── chart_utils.py         # Reusable chart styling helpers
+    ├── .gitignore   
+    ├── config.py              # All constants, colors, and data definitions
+    ├── data_generator.py      # Synthetic data generation functions
+    ├── chart_utils.py         # Reusable chart styling helpers
+    ├── main.py                # Entry point - run this
+    ├── summary.py             # Summary report generation
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ---
