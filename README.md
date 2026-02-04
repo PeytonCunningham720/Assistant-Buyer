@@ -135,7 +135,7 @@ If you'd like to run the analysis yourself:
 ```bash
 # 1. Clone the repository
 git clone https://github.com/PeytonCunningham720/Assistant-Buyer.git
-cd retail-buying-analyzer
+cd Assistant-Buyer
 
 # 2. Create and activate a virtual environment
 python -m venv venv
@@ -165,11 +165,11 @@ retail_analysis/                  # Root project directory
 │   │   ├── executive_dashboard.py  # Script to create executive dashboard chart
 │   │   └── ...                     # Other visualization scripts
 │   ├── chart_utils.py             # Helper functions for consistent chart styling
-│   ├── .gitignore                 # Tells python which files to ignore
 │   ├── config.py                  # Constants, colors, paths, and other configuration
 │   ├── data_generator.py          # Functions to generate synthetic or demo data
 │   ├── main.py                    # Entry point script to run the analysis
 │   ├── summary.py                 # Script to generate summary reports
+├── .gitignore                     # Tells python which files to ignore
 ├── README.md                      # This File!
 └── requirements.txt               # Python dependencies for the project
 ```

@@ -22,7 +22,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Import project modules
-from src.config import DATA_DIR, apply_plot_style
+from config import DATA_DIR, apply_plot_style
 from src.data_generator import (
     get_base_dataframes,
     generate_sales_data,
