@@ -9,27 +9,33 @@ It orchestrates all the pieces:
     4. Print summary report
 
 Usage:
-    python -m src.main
+    python src/main.py
 
 Author: Peyton Cunningham
 Project: Movement Climbing Gyms - Assistant Buyer Portfolio
 """
 
 import os
+import sys
 import warnings
+
+# ─────────────────────────────────────────────────────────────────────
+# Ensure 'src' is on the path so imports work when running directly
+# ─────────────────────────────────────────────────────────────────────
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Suppress warnings for cleaner output
 warnings.filterwarnings('ignore')
 
-# Import project modules
+# Import project modules using absolute imports
 from config import DATA_DIR, apply_plot_style
-from src.data_generator import (
+from data_generator import (
     get_base_dataframes,
     generate_sales_data,
     generate_inventory_data,
     generate_po_data
 )
-from src.visualizations import (
+from visualizations import (
     create_executive_dashboard,
     create_sales_by_category,
     create_sales_by_region,
@@ -44,7 +50,7 @@ from src.visualizations import (
     create_po_pipeline,
     create_shoe_deep_dive
 )
-from src.summary import print_summary
+from summary import print_summary
 
 
 def main():

@@ -13,7 +13,7 @@ Functions:
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 
-from src.config import COLORS
+from config import COLORS
 
 
 def draw_kpi_card(ax, x, y, w, h, label, value_text, subtitle='',

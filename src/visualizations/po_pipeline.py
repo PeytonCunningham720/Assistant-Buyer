@@ -9,7 +9,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from src.config import COLORS, CHARTS_DIR
+from config import COLORS, CHARTS_DIR
 
 
 def create_po_pipeline(po_df):

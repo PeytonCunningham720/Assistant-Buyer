@@ -8,7 +8,7 @@ to identify seasonal patterns and category mix changes.
 import os
 import matplotlib.pyplot as plt
 
-from src.config import COLORS, CHARTS_DIR
+from config import COLORS, CHARTS_DIR
 from chart_utils import style_chart_basic
 
 
