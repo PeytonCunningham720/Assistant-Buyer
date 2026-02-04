@@ -61,7 +61,7 @@ def apply_plot_style():
 # =============================================================================
 COLORS = {
     'primary':     '#1B2A4A',   # deep navy - main brand color
-    'secondary':   '#D94F4F',   # warm red - accent/highlight
+    'secondary':   "#070707",   # warm red - accent/highlight
     'accent':      '#2E86AB',   # steel blue - charts/data
     'success':     '#28A745',   # green - positive metrics
     'warning':     '#F5A623',   # amber - attention needed

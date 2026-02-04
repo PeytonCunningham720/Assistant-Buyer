@@ -152,37 +152,35 @@ The script will generate fresh data, run all analyses, and save outputs to the `
 
 ---
 
-## 📁 What's in This Project
+## Project Structure
 
 ```
-Assistant-Buyer/
-│
-├── src/
-│   ├── config.py          # All constants, colors, and data definitions
-│   ├── data_generator.py  # Synthetic data generation functions
-│   ├── chart_utils.py     # Reusable chart styling helpers
-│   ├── charts.py          # All visualization functions
-│   ├── summary.py         # Summary report generation
-│   └── main.py            # Entry point - orchestrates everything
-│
-├── output/
-│   ├── charts/              # 13 PNG visualizations ready for presentations (PNG files)
-│   │   ├── 00_executive_dashboard.png
-│   │   ├── 01_sales_by_category.png
-│   │   ├── 02_sales_by_region.png
-│   │   └── ... (10 more charts)
-│   │
-│   └── data/                # Raw data exports generated randomly (CSV files)
-│       ├── sales_data.csv
-│       ├── inventory_data.csv
-│       ├── purchase_orders.csv
-│       ├── product_catalog.csv
-│       └── gym_locations.csv
-│
-├── requirements.txt         # List of Python packages needed
-├── README.md               # This file!
-├── LICENSE                 # Open source license
-└── .gitignore              # Tells Git which files to ignore
+retail_analysis/
+├── config.py              # All constants, colors, and data definitions
+├── data_generator.py      # Synthetic data generation functions
+├── chart_utils.py         # Reusable chart styling helpers
+├── summary.py             # Summary report generation
+├── main.py                # Entry point - run this
+├── README.md
+├── .gitignore
+├── visualizations/        # One file per chart
+│   ├── __init__.py
+│   ├── executive_dashboard.py
+│   ├── sales_by_category.py
+│   ├── sales_by_region.py
+│   ├── margin_analysis.py
+│   ├── monthly_trends.py
+│   ├── top_bottom_sellers.py
+│   ├── instock_by_gym.py
+│   ├── inventory_status.py
+│   ├── aged_inventory.py
+│   ├── allocation_analysis.py
+│   ├── vendor_scorecard.py
+│   ├── po_pipeline.py
+│   └── shoe_deep_dive.py
+└── output/
+    ├── charts/            # Generated PNG visualizations
+    └── data/              # Exported CSV data files
 ```
 
 ---

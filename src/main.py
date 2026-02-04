@@ -9,10 +9,7 @@ It orchestrates all the pieces:
     4. Print summary report
 
 Usage:
-    python main.py
-
-Or from the project root:
-    python src/main.py
+    python -m src.main
 
 Author: Peyton Cunningham
 Project: Movement Climbing Gyms - Assistant Buyer Portfolio
@@ -32,7 +29,7 @@ from src.data_generator import (
     generate_inventory_data,
     generate_po_data
 )
-from src.charts import (
+from src.visualizations import (
     create_executive_dashboard,
     create_sales_by_category,
     create_sales_by_region,
@@ -61,26 +58,23 @@ def main():
     print("RETAIL BUYING & ALLOCATION ANALYSIS DASHBOARD")
     print("Movement Climbing Gyms")
     print("=" * 70)
-    
+
     # ─────────────────────────────────────────────────────────────────────
     # STEP 1: GENERATE DATA
     # ─────────────────────────────────────────────────────────────────────
-    print("\n Generating synthetic retail data...")
-    
-    # Get base DataFrames from config
+    print("\n📦 Generating synthetic retail data...")
+
     gyms_df, products_df = get_base_dataframes()
-    
-    # Generate all datasets
+
     sales_df = generate_sales_data(gyms_df, products_df)
     inventory_df = generate_inventory_data(gyms_df, products_df)
     po_df = generate_po_data(products_df)
-    
-    # Print generation stats
+
     print(f"   ✅ {len(sales_df):,} sales transactions generated")
     print(f"   ✅ {len(inventory_df):,} inventory records generated")
     print(f"   ✅ {len(po_df):,} purchase orders generated")
     print(f"   ✅ {len(products_df)} SKUs across {len(gyms_df)} gym locations")
-    
+
     # ─────────────────────────────────────────────────────────────────────
     # STEP 2: EXPORT RAW DATA
     # ─────────────────────────────────────────────────────────────────────
@@ -89,40 +83,39 @@ def main():
     po_df.to_csv(os.path.join(DATA_DIR, 'purchase_orders.csv'), index=False)
     products_df.to_csv(os.path.join(DATA_DIR, 'product_catalog.csv'), index=False)
     gyms_df.to_csv(os.path.join(DATA_DIR, 'gym_locations.csv'), index=False)
-    
-    print("\n Raw data exported to output/data/")
-    
+
+    print("\n💾 Raw data exported to output/data/")
+
     # ─────────────────────────────────────────────────────────────────────
     # STEP 3: CREATE VISUALIZATIONS
     # ─────────────────────────────────────────────────────────────────────
     print("\n📊 Running analyses and generating visualizations...\n")
-    
-    # Apply consistent plot styling
+
     apply_plot_style()
-    
-    # Executive Dashboard - the main overview
+
+    # Executive Dashboard
     create_executive_dashboard(sales_df, inventory_df, po_df)
-    
+
     # Sales Analysis
     create_sales_by_category(sales_df)
     create_sales_by_region(sales_df)
     create_margin_analysis(sales_df)
     create_monthly_trend(sales_df)
     create_top_bottom_sellers(sales_df)
-    
+
     # Inventory Analysis
     create_instock_by_gym(inventory_df)
     create_inventory_status(inventory_df)
     create_aged_inventory(inventory_df)
     create_allocation_analysis(inventory_df, sales_df)
-    
+
     # Vendor Analysis
     create_vendor_scorecard(po_df)
     create_po_pipeline(po_df)
-    
+
     # Category Deep-Dive
     create_shoe_deep_dive(sales_df, inventory_df, products_df)
-    
+
     # ─────────────────────────────────────────────────────────────────────
     # STEP 4: PRINT SUMMARY
     # ─────────────────────────────────────────────────────────────────────
