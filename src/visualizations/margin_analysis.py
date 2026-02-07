@@ -16,8 +16,16 @@ def create_margin_analysis(sales_df):
     """Gross margin analysis by category and vendor."""
     
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6), facecolor='white')
+    
+    # Get date range from the data for context
+    date_min = sales_df['sale_date'].min().strftime('%b %Y')
+    date_max = sales_df['sale_date'].max().strftime('%b %Y')
+    
+    # Main title with date range subtitle
     fig.suptitle('Gross Margin Analysis', fontsize=16,
-                 fontweight='bold', color=COLORS['text'])
+                 fontweight='bold', color=COLORS['text'], y=0.98)
+    fig.text(0.5, 0.92, f'{date_min} – {date_max}', ha='center',
+             fontsize=10, color=COLORS['text_light'], style='italic')
     
     # Margin % by category
     cat_margin = sales_df.groupby('category').agg(
@@ -52,7 +60,7 @@ def create_margin_analysis(sales_df):
     ax2.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
     style_chart_basic(ax2)
     
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0, 1, 0.90])  # Make room for subtitle
     plt.savefig(os.path.join(CHARTS_DIR, '03_margin_analysis.png'),
                 bbox_inches='tight', facecolor='white')
     plt.close()
