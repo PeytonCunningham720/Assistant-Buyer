@@ -42,42 +42,78 @@ This tool analyzes retail data and **produces easy-to-understand reports and cha
 
 | What I Analyze | Why It Matters |
 |----------------|----------------|
-| [**In-stock rate by gym**](output/charts/05_instock_by_gym.png) | Ensures strong in-stock levels across 30+ locations — the #1 allocation KPI |
+| [**In-stock rate by gym**](output/charts/05_instock_by_gym.png) | Ensures strong in-stock levels across 30+ locations, the #1 allocation KPI |
 | [**Inventory status overview**](output/charts/06_inventory_status.png) | Shows the health of inventory network-wide (out of stock, low, overstock) |
 | [**Aged inventory analysis**](output/charts/07_aged_inventory.png) | Identifies slow-moving and overstock items that tie up capital |
 | [**Allocation efficiency**](output/charts/10_allocation_analysis.png) | Compares inventory levels to sales velocity to optimize product flow |
 
 ![In-Stock Rate by Gym](output/charts/05_instock_by_gym.png)
 
-**Sample insight:** *Movement Thornton and Movement Glen Burnie are below 40% in-stock rate — these locations should be prioritized in this week's allocation. Meanwhile, $7,969 in overstock inventory should be reviewed for transfers to understocked gyms.*
+**Sample insight:** *Movement Thornton and Movement Glen Burnie are below 40% in-stock rate, these locations should be prioritized in this week's allocation. Meanwhile, $7,969 in overstock inventory should be reviewed for transfers to understocked gyms.*
+
+<details>
+<summary><strong>📖 Key Terms</strong></summary>
+
+| Term | Definition | Calculation |
+|------|------------|-------------|
+| **In-Stock Rate** | Percentage of SKU-locations with inventory available to sell | `SKUs In Stock / Total SKUs × 100` |
+| **Weeks of Supply** | How long current inventory will last at current sales rate | `On-Hand Units / Avg Weekly Sales` |
+| **Overstock** | Inventory exceeding 12 weeks of supply — ties up capital | `Weeks of Supply > 12` |
+| **SKU-Location** | A unique product at a specific gym (e.g., "Tarantula size 42 at RiNo") | — |
+
+</details>
 
 ### 2. Sales Performance Analysis
 **What it answers:** What's selling, where, and when?
 
 | What I Analyze | Why It Matters |
 |----------------|----------------|
-| [**Sales by product category**](output/charts/01_sales_by_category.png) | Shows which categories drive revenue and volume — critical for assortment planning |
+| [**Sales by product category**](output/charts/01_sales_by_category.png) | Shows which categories drive revenue and volume, critical for assortment planning |
 | [**Regional sales performance**](output/charts/02_sales_by_region.png) | Compares performance across Movement's geographic regions |
 | [**Gross margin analysis**](output/charts/03_margin_analysis.png) | Identifies which categories and vendors deliver the best margins |
 | [**Monthly sales trends**](output/charts/04_monthly_trends.png) | Reveals seasonality patterns to inform buying cycles and chase buys |
 
 ![Margin Analysis](output/charts/03_margin_analysis.png)
 
-**Sample insight:** *Climbing Shoes generate the highest revenue at $4.3M with a 50%+ gross margin. Monthly trends show peak sales in April-May and September-October, aligning with outdoor climbing season — this is when we should be best stocked.*
+**Sample insight:** *Climbing Shoes generate the highest revenue at $4.3M with a 50%+ gross margin. Monthly trends show peak sales in April-May and September-October, aligning with outdoor climbing season, this is when we should be best stocked.*
+
+<details>
+<summary><strong>📖 Key Terms</strong></summary>
+
+| Term | Definition | Calculation |
+|------|------------|-------------|
+| **Gross Margin $** | Dollar profit after subtracting product cost | `Revenue - Cost of Goods Sold` |
+| **Gross Margin %** | Percentage of revenue kept as profit | `(Revenue - Cost) / Revenue × 100` |
+| **Seasonality** | Predictable sales patterns tied to time of year | — |
+| **Chase Buy** | Additional order placed mid-season to restock fast sellers | — |
+
+</details>
 
 ### 3. Vendor Management & Purchase Orders
 **What it answers:** How reliable are our vendors, and is our buying pipeline healthy?
 
 | What I Analyze | Why It Matters |
 |----------------|----------------|
-| [**Vendor on-time delivery rates**](output/charts/08_vendor_scorecard.png) | Tracks which vendors meet their commitments — critical for maintaining in-stock levels |
+| [**Vendor on-time delivery rates**](output/charts/08_vendor_scorecard.png) | Tracks which vendors meet their commitments, critical for maintaining in-stock levels |
 | [**Lead time analysis**](output/charts/08_vendor_scorecard.png) | Understanding vendor lead times helps time POs to avoid stockouts |
 | [**PO pipeline status**](output/charts/11_po_pipeline.png) | Shows the flow of open, in-transit, and received purchase orders |
 | [**Top & bottom sellers**](output/charts/09_top_bottom_sellers.png) | Informs chase buys for winners and markdown decisions for underperformers |
 
 ![Vendor Scorecard](output/charts/08_vendor_scorecard.png)
 
-**Sample insight:** *Petzl leads vendor performance with 89.5% on-time delivery. Several vendors are below the 85% threshold and may need follow-up on PO confirmations and shipping commitments — exactly the kind of operational follow-up outlined in the job description.*
+**Sample insight:** *Petzl leads vendor performance with 89.5% on-time delivery. Several vendors are below the 85% threshold and may need follow-up on PO confirmations and shipping commitments, exactly the kind of operational follow-up outlined in the job description.*
+
+<details>
+<summary><strong>📖 Key Terms</strong></summary>
+
+| Term | Definition | Calculation |
+|------|------------|-------------|
+| **On-Time Delivery (OTD)** | Percentage of POs delivered by the expected date | `On-Time POs / Total POs × 100` |
+| **Lead Time** | Days between placing a PO and receiving inventory | `Delivery Date - PO Date` |
+| **Delivery Variance** | How many days early or late a shipment arrived | `Actual Delivery - Expected Delivery` |
+| **PO (Purchase Order)** | Formal order sent to a vendor for inventory | — |
+
+</details>
 
 ---
 
@@ -89,10 +125,10 @@ The project **automatically** generates **13 professional charts** that are read
 A one-page summary showing key metrics at a glance: total revenue, in-stock rate, inventory value, sales by category, top gyms, and vendor on-time delivery.
 
 ### [In-Stock Rate by Gym](output/charts/05_instock_by_gym.png)
-Color-coded bars (red/yellow/green) that instantly show which gyms need allocation attention — the most important weekly view for this role.
+Color-coded bars (red/yellow/green) that instantly show which gyms need allocation attention, the most important weekly view for this role.
 
 ### [Gross Margin Analysis](output/charts/03_margin_analysis.png)
-Margin percentages by category and margin dollars by vendor — critical for assortment and buying decisions.
+Margin percentages by category and margin dollars by vendor, critical for assortment and buying decisions.
 
 ### [Vendor Performance Scorecard](output/charts/08_vendor_scorecard.png)
 A comprehensive 4-panel view of vendor on-time delivery, lead times, spend, and delivery variance.
@@ -117,7 +153,7 @@ I used **Python**, a widely-used programming language for data analysis. The cod
 ### Why These Choices Matter for the Role
 - **Business Central compatibility:** The data structures I created mirror what you'd see in ERP/inventory management systems like Business Central
 - **Scalability:** This approach can handle thousands of SKUs across 30+ locations
-- **Repeatability:** Run the same analysis weekly or monthly with updated data — supporting the weekly and monthly reporting mentioned in the job description
+- **Repeatability:** Run the same analysis weekly or monthly with updated data, supporting the weekly and monthly reporting mentioned in the job description
 - **Accuracy:** Automated calculations eliminate manual errors in allocation and reporting
 
 ---
@@ -199,7 +235,7 @@ Tracking whether vendors deliver when promised is critical for maintaining in-st
 - **85–92%** = Acceptable with room for improvement
 - **Below 85%** = Needs vendor follow-up and discussion
 
-*Vendor management is a core responsibility of the Assistant Buyer — "act as the primary contact for vendors regarding PO confirmations, shipping updates, and operational follow-up."*
+*Vendor management is a core responsibility of the Assistant Buyer, "act as the primary contact for vendors regarding PO confirmations, shipping updates, and operational follow-up."*
 
 ---
 
