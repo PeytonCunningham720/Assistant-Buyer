@@ -200,14 +200,14 @@ retail_analysis/                  # Root project directory
 │   │   ├── __init__.py             # Makes this folder a Python package
 │   │   ├── executive_dashboard.py  # Script to create executive dashboard chart
 │   │   └── ...                     # Other visualization scripts
-│   ├── chart_utils.py             # Helper functions for consistent chart styling
-│   ├── config.py                  # Constants, colors, paths, and other configuration
-│   ├── data_generator.py          # Functions to generate synthetic or demo data
-│   ├── main.py                    # Entry point script to run the analysis
-│   ├── summary.py                 # Script to generate summary reports
-├── .gitignore                     # Tells python which files to ignore
-├── README.md                      # This File!
-└── requirements.txt               # Python dependencies for the project
+│   ├── chart_utils.py            # Helper functions for consistent chart styling
+│   ├── config.py                 # Constants, colors, paths, and other configuration
+│   ├── data_generator.py         # Functions to generate synthetic or demo data
+│   ├── main.py                   # Entry point script to run the analysis
+│   ├── summary.py                # Script to generate summary reports
+├── .gitignore                    # Tells python which files to ignore
+├── README.md                     # This File!
+└── requirements.txt              # Python dependencies for the project
 ```
 
 ---

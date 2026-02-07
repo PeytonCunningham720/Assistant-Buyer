@@ -1,27 +1,34 @@
 gym_id,gym_name,city,state,region,size
-MOV-001,Movement Baker,Denver,CO,Colorado,Large
-MOV-002,Movement RiNo,Denver,CO,Colorado,Large
-MOV-003,Movement Englewood,Englewood,CO,Colorado,Medium
-MOV-004,Movement Golden,Golden,CO,Colorado,Medium
-MOV-005,Movement Boulder,Boulder,CO,Colorado,Medium
-MOV-006,Movement Fountain,Colorado Springs,CO,Colorado,Small
-MOV-007,Movement Plano,Plano,TX,Texas,Large
-MOV-008,Movement Austin,Austin,TX,Texas,Large
-MOV-009,Movement Houston,Houston,TX,Texas,Medium
-MOV-010,Movement San Francisco,San Francisco,CA,California,Large
-MOV-011,Movement Sunnyvale,Sunnyvale,CA,California,Medium
-MOV-012,Movement Oakland,Oakland,CA,California,Medium
-MOV-013,Movement Hampden,Baltimore,MD,East Coast,Large
-MOV-014,Movement Timonium,Timonium,MD,East Coast,Medium
-MOV-015,Movement Columbia,Columbia,MD,East Coast,Medium
-MOV-016,Movement Richmond,Richmond,VA,East Coast,Medium
-MOV-017,Movement Virginia Beach,Virginia Beach,VA,East Coast,Small
-MOV-018,Movement Manassas,Manassas,VA,East Coast,Small
-MOV-019,Movement Gowanus,Brooklyn,NY,Northeast,Large
-MOV-020,Movement Harlem,New York,NY,Northeast,Medium
-MOV-021,Movement Portland,Portland,OR,Pacific NW,Large
-MOV-022,Movement Sellwood,Portland,OR,Pacific NW,Medium
-MOV-023,Movement Wrigleyville,Chicago,IL,Midwest,Large
-MOV-024,Movement Lincoln Park,Chicago,IL,Midwest,Medium
-MOV-025,Movement Philadelphia,Philadelphia,PA,Northeast,Large
-MOV-026,Movement King of Prussia,King of Prussia,PA,Northeast,Medium
+MOV-001,Movement Mountain View,Mountain View,CA,California,Large
+MOV-002,Movement Belmont,Belmont,CA,California,Medium
+MOV-003,Movement Fountain Valley,Fountain Valley,CA,California,Large
+MOV-004,Movement San Francisco,San Francisco,CA,California,Large
+MOV-005,Movement Santa Clara,Santa Clara,CA,California,Medium
+MOV-006,Movement Sunnyvale,Sunnyvale,CA,California,Medium
+MOV-007,Movement Portland,Portland,OR,Pacific NW,Large
+MOV-008,Movement Baker,Denver,CO,Colorado,Large
+MOV-009,Movement Boulder,Boulder,CO,Colorado,Large
+MOV-010,Movement Centennial,Centennial,CO,Colorado,Medium
+MOV-011,Movement Englewood,Englewood,CO,Colorado,Medium
+MOV-012,Movement Golden,Golden,CO,Colorado,Medium
+MOV-013,Movement RiNo,Denver,CO,Colorado,Large
+MOV-014,Movement Lincoln Park,Chicago,IL,Midwest,Large
+MOV-015,Movement Wrigleyville,Chicago,IL,Midwest,Large
+MOV-016,Movement Denton,Denton,TX,Texas,Medium
+MOV-017,Movement Design District,Dallas,TX,Texas,Large
+MOV-018,Movement Fort Worth,Fort Worth,TX,Texas,Large
+MOV-019,Movement Grapevine,Grapevine,TX,Texas,Medium
+MOV-020,Movement The Hill,Dallas,TX,Texas,Medium
+MOV-021,Movement Plano,Plano,TX,Texas,Large
+MOV-022,Movement Columbia,Columbia,MD,Mid-Atlantic,Medium
+MOV-023,Movement Hampden,Baltimore,MD,Mid-Atlantic,Large
+MOV-024,Movement Rockville,Rockville,MD,Mid-Atlantic,Medium
+MOV-025,Movement Timonium,Timonium,MD,Mid-Atlantic,Medium
+MOV-026,Movement Gowanus,Brooklyn,NY,Northeast,Large
+MOV-027,Movement Harlem,New York,NY,Northeast,Large
+MOV-028,Movement LIC,Queens,NY,Northeast,Medium
+MOV-029,Movement Valhalla,Valhalla,NY,Northeast,Medium
+MOV-030,Movement Callowhill,Philadelphia,PA,Northeast,Large
+MOV-031,Movement Fishtown,Philadelphia,PA,Northeast,Medium
+MOV-032,Movement Crystal City,Arlington,VA,Mid-Atlantic,Large
+MOV-033,Movement Fairfax,Fairfax,VA,Mid-Atlantic,Medium

@@ -86,32 +86,48 @@ CATEGORY_PALETTE = [
 # GYM LOCATIONS - Movement's network of climbing gyms
 # =============================================================================
 GYM_LOCATIONS = [
-    {'gym_id': 'MOV-001', 'gym_name': 'Movement Baker', 'city': 'Denver', 'state': 'CO', 'region': 'Colorado', 'size': 'Large'},
-    {'gym_id': 'MOV-002', 'gym_name': 'Movement RiNo', 'city': 'Denver', 'state': 'CO', 'region': 'Colorado', 'size': 'Large'},
-    {'gym_id': 'MOV-003', 'gym_name': 'Movement Englewood', 'city': 'Englewood', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
-    {'gym_id': 'MOV-004', 'gym_name': 'Movement Golden', 'city': 'Golden', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
-    {'gym_id': 'MOV-005', 'gym_name': 'Movement Boulder', 'city': 'Boulder', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
-    {'gym_id': 'MOV-006', 'gym_name': 'Movement Fountain', 'city': 'Colorado Springs', 'state': 'CO', 'region': 'Colorado', 'size': 'Small'},
-    {'gym_id': 'MOV-007', 'gym_name': 'Movement Plano', 'city': 'Plano', 'state': 'TX', 'region': 'Texas', 'size': 'Large'},
-    {'gym_id': 'MOV-008', 'gym_name': 'Movement Austin', 'city': 'Austin', 'state': 'TX', 'region': 'Texas', 'size': 'Large'},
-    {'gym_id': 'MOV-009', 'gym_name': 'Movement Houston', 'city': 'Houston', 'state': 'TX', 'region': 'Texas', 'size': 'Medium'},
-    {'gym_id': 'MOV-010', 'gym_name': 'Movement San Francisco', 'city': 'San Francisco', 'state': 'CA', 'region': 'California', 'size': 'Large'},
-    {'gym_id': 'MOV-011', 'gym_name': 'Movement Sunnyvale', 'city': 'Sunnyvale', 'state': 'CA', 'region': 'California', 'size': 'Medium'},
-    {'gym_id': 'MOV-012', 'gym_name': 'Movement Oakland', 'city': 'Oakland', 'state': 'CA', 'region': 'California', 'size': 'Medium'},
-    {'gym_id': 'MOV-013', 'gym_name': 'Movement Hampden', 'city': 'Baltimore', 'state': 'MD', 'region': 'East Coast', 'size': 'Large'},
-    {'gym_id': 'MOV-014', 'gym_name': 'Movement Timonium', 'city': 'Timonium', 'state': 'MD', 'region': 'East Coast', 'size': 'Medium'},
-    {'gym_id': 'MOV-015', 'gym_name': 'Movement Columbia', 'city': 'Columbia', 'state': 'MD', 'region': 'East Coast', 'size': 'Medium'},
-    {'gym_id': 'MOV-016', 'gym_name': 'Movement Richmond', 'city': 'Richmond', 'state': 'VA', 'region': 'East Coast', 'size': 'Medium'},
-    {'gym_id': 'MOV-017', 'gym_name': 'Movement Virginia Beach', 'city': 'Virginia Beach', 'state': 'VA', 'region': 'East Coast', 'size': 'Small'},
-    {'gym_id': 'MOV-018', 'gym_name': 'Movement Manassas', 'city': 'Manassas', 'state': 'VA', 'region': 'East Coast', 'size': 'Small'},
-    {'gym_id': 'MOV-019', 'gym_name': 'Movement Gowanus', 'city': 'Brooklyn', 'state': 'NY', 'region': 'Northeast', 'size': 'Large'},
-    {'gym_id': 'MOV-020', 'gym_name': 'Movement Harlem', 'city': 'New York', 'state': 'NY', 'region': 'Northeast', 'size': 'Medium'},
-    {'gym_id': 'MOV-021', 'gym_name': 'Movement Portland', 'city': 'Portland', 'state': 'OR', 'region': 'Pacific NW', 'size': 'Large'},
-    {'gym_id': 'MOV-022', 'gym_name': 'Movement Sellwood', 'city': 'Portland', 'state': 'OR', 'region': 'Pacific NW', 'size': 'Medium'},
-    {'gym_id': 'MOV-023', 'gym_name': 'Movement Wrigleyville', 'city': 'Chicago', 'state': 'IL', 'region': 'Midwest', 'size': 'Large'},
-    {'gym_id': 'MOV-024', 'gym_name': 'Movement Lincoln Park', 'city': 'Chicago', 'state': 'IL', 'region': 'Midwest', 'size': 'Medium'},
-    {'gym_id': 'MOV-025', 'gym_name': 'Movement Philadelphia', 'city': 'Philadelphia', 'state': 'PA', 'region': 'Northeast', 'size': 'Large'},
-    {'gym_id': 'MOV-026', 'gym_name': 'Movement King of Prussia', 'city': 'King of Prussia', 'state': 'PA', 'region': 'Northeast', 'size': 'Medium'},
+    # California
+    {'gym_id': 'MOV-001', 'gym_name': 'Movement Mountain View', 'city': 'Mountain View', 'state': 'CA', 'region': 'California', 'size': 'Large'},
+    {'gym_id': 'MOV-002', 'gym_name': 'Movement Belmont', 'city': 'Belmont', 'state': 'CA', 'region': 'California', 'size': 'Medium'},
+    {'gym_id': 'MOV-003', 'gym_name': 'Movement Fountain Valley', 'city': 'Fountain Valley', 'state': 'CA', 'region': 'California', 'size': 'Large'},
+    {'gym_id': 'MOV-004', 'gym_name': 'Movement San Francisco', 'city': 'San Francisco', 'state': 'CA', 'region': 'California', 'size': 'Large'},
+    {'gym_id': 'MOV-005', 'gym_name': 'Movement Santa Clara', 'city': 'Santa Clara', 'state': 'CA', 'region': 'California', 'size': 'Medium'},
+    {'gym_id': 'MOV-006', 'gym_name': 'Movement Sunnyvale', 'city': 'Sunnyvale', 'state': 'CA', 'region': 'California', 'size': 'Medium'},
+    # Oregon
+    {'gym_id': 'MOV-007', 'gym_name': 'Movement Portland', 'city': 'Portland', 'state': 'OR', 'region': 'Pacific NW', 'size': 'Large'},
+    # Colorado
+    {'gym_id': 'MOV-008', 'gym_name': 'Movement Baker', 'city': 'Denver', 'state': 'CO', 'region': 'Colorado', 'size': 'Large'},
+    {'gym_id': 'MOV-009', 'gym_name': 'Movement Boulder', 'city': 'Boulder', 'state': 'CO', 'region': 'Colorado', 'size': 'Large'},
+    {'gym_id': 'MOV-010', 'gym_name': 'Movement Centennial', 'city': 'Centennial', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
+    {'gym_id': 'MOV-011', 'gym_name': 'Movement Englewood', 'city': 'Englewood', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
+    {'gym_id': 'MOV-012', 'gym_name': 'Movement Golden', 'city': 'Golden', 'state': 'CO', 'region': 'Colorado', 'size': 'Medium'},
+    {'gym_id': 'MOV-013', 'gym_name': 'Movement RiNo', 'city': 'Denver', 'state': 'CO', 'region': 'Colorado', 'size': 'Large'},
+    # Illinois
+    {'gym_id': 'MOV-014', 'gym_name': 'Movement Lincoln Park', 'city': 'Chicago', 'state': 'IL', 'region': 'Midwest', 'size': 'Large'},
+    {'gym_id': 'MOV-015', 'gym_name': 'Movement Wrigleyville', 'city': 'Chicago', 'state': 'IL', 'region': 'Midwest', 'size': 'Large'},
+    # Texas
+    {'gym_id': 'MOV-016', 'gym_name': 'Movement Denton', 'city': 'Denton', 'state': 'TX', 'region': 'Texas', 'size': 'Medium'},
+    {'gym_id': 'MOV-017', 'gym_name': 'Movement Design District', 'city': 'Dallas', 'state': 'TX', 'region': 'Texas', 'size': 'Large'},
+    {'gym_id': 'MOV-018', 'gym_name': 'Movement Fort Worth', 'city': 'Fort Worth', 'state': 'TX', 'region': 'Texas', 'size': 'Large'},
+    {'gym_id': 'MOV-019', 'gym_name': 'Movement Grapevine', 'city': 'Grapevine', 'state': 'TX', 'region': 'Texas', 'size': 'Medium'},
+    {'gym_id': 'MOV-020', 'gym_name': 'Movement The Hill', 'city': 'Dallas', 'state': 'TX', 'region': 'Texas', 'size': 'Medium'},
+    {'gym_id': 'MOV-021', 'gym_name': 'Movement Plano', 'city': 'Plano', 'state': 'TX', 'region': 'Texas', 'size': 'Large'},
+    # Maryland
+    {'gym_id': 'MOV-022', 'gym_name': 'Movement Columbia', 'city': 'Columbia', 'state': 'MD', 'region': 'Mid-Atlantic', 'size': 'Medium'},
+    {'gym_id': 'MOV-023', 'gym_name': 'Movement Hampden', 'city': 'Baltimore', 'state': 'MD', 'region': 'Mid-Atlantic', 'size': 'Large'},
+    {'gym_id': 'MOV-024', 'gym_name': 'Movement Rockville', 'city': 'Rockville', 'state': 'MD', 'region': 'Mid-Atlantic', 'size': 'Medium'},
+    {'gym_id': 'MOV-025', 'gym_name': 'Movement Timonium', 'city': 'Timonium', 'state': 'MD', 'region': 'Mid-Atlantic', 'size': 'Medium'},
+    # New York
+    {'gym_id': 'MOV-026', 'gym_name': 'Movement Gowanus', 'city': 'Brooklyn', 'state': 'NY', 'region': 'Northeast', 'size': 'Large'},
+    {'gym_id': 'MOV-027', 'gym_name': 'Movement Harlem', 'city': 'New York', 'state': 'NY', 'region': 'Northeast', 'size': 'Large'},
+    {'gym_id': 'MOV-028', 'gym_name': 'Movement LIC', 'city': 'Queens', 'state': 'NY', 'region': 'Northeast', 'size': 'Medium'},
+    {'gym_id': 'MOV-029', 'gym_name': 'Movement Valhalla', 'city': 'Valhalla', 'state': 'NY', 'region': 'Northeast', 'size': 'Medium'},
+    # Pennsylvania
+    {'gym_id': 'MOV-030', 'gym_name': 'Movement Callowhill', 'city': 'Philadelphia', 'state': 'PA', 'region': 'Northeast', 'size': 'Large'},
+    {'gym_id': 'MOV-031', 'gym_name': 'Movement Fishtown', 'city': 'Philadelphia', 'state': 'PA', 'region': 'Northeast', 'size': 'Medium'},
+    # Virginia
+    {'gym_id': 'MOV-032', 'gym_name': 'Movement Crystal City', 'city': 'Arlington', 'state': 'VA', 'region': 'Mid-Atlantic', 'size': 'Large'},
+    {'gym_id': 'MOV-033', 'gym_name': 'Movement Fairfax', 'city': 'Fairfax', 'state': 'VA', 'region': 'Mid-Atlantic', 'size': 'Medium'},
 ]
 
 # =============================================================================
