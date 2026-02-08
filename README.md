@@ -4,6 +4,8 @@
 
 ## 👋 Hi, My name is Peyton Cunningham!
 <img src = "Peyton.png" width = "200" align = "right">
+<br>
+<em>Annual romp up The Diamond in RMNP</em>
 
 **Thank you for taking the time to review my portfolio project!**
 
