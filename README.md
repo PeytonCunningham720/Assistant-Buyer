@@ -207,6 +207,7 @@ retail_analysis/                  # Root project directory
 │   ├── main.py                   # Entry point script to run the analysis
 │   ├── summary.py                # Script to generate summary reports
 ├── .gitignore                    # Tells python which files to ignore
+├── Peyton.png                    # Annual Romp up The Diamond!
 ├── README.md                     # This File!
 └── requirements.txt              # Python dependencies for the project
 ```
