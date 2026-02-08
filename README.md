@@ -3,7 +3,7 @@
 ![Executive Dashboard](output/charts/00_executive_dashboard.png)
 
 ## 👋 Hi, My name is Peyton Cunningham!
-![Peyton Headshot](Peyton.png)
+<img src = "Peyton.png" width = "200" align = "right">
 
 **Thank you for taking the time to review my portfolio project!**
 
