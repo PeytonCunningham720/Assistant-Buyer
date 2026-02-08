@@ -3,9 +3,11 @@
 ![Executive Dashboard](output/charts/00_executive_dashboard.png)
 
 ## 👋 Hi, My name is Peyton Cunningham!
-<img src = "Peyton.png" width = "200" align = "right">
-<br>
-<em>Annual romp up The Diamond in RMNP</em>
+<p align="right">
+  <img src="Peyton.png" width="200">
+  <br>
+  <em>Annual romp up The Diamond in RMNP</em>
+</p>
 
 **Thank you for taking the time to review my portfolio project!**
 
