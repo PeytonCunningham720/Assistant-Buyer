@@ -16,8 +16,15 @@ def create_po_pipeline(po_df):
     """Purchase order pipeline - status breakdown and monthly volume."""
     
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6), facecolor='white')
+    
+    # Get date range from the data for context
+    date_min = po_df['po_date'].min().strftime('%b %Y')
+    date_max = po_df['po_date'].max().strftime('%b %Y')
+    
     fig.suptitle('Purchase Order Pipeline', fontsize=16,
-                 fontweight='bold', color=COLORS['text'])
+                 fontweight='bold', color=COLORS['text'], y=0.98)
+    fig.text(0.5, 0.93, f'{date_min} – {date_max}', ha='center',
+             fontsize=10, color=COLORS['text_light'], style='italic')
     
     # PO status pie chart
     po_status = po_df['status'].value_counts()
@@ -28,7 +35,8 @@ def create_po_pipeline(po_df):
     }
     colors_po = [status_colors_po.get(s, 'gray') for s in po_status.index]
     ax1.pie(po_status.values, labels=po_status.index, colors=colors_po,
-            autopct='%1.1f%%', startangle=90, textprops={'fontsize': 11})
+            autopct='%1.1f%%', startangle=90, textprops={'fontsize': 11},
+            explode=[0.02] * len(po_status), pctdistance=0.75, labeldistance=1.15)
     ax1.set_title('PO Status Breakdown', fontweight='bold')
     
     # Monthly PO volume and value
@@ -52,7 +60,12 @@ def create_po_pipeline(po_df):
     ax2.set_xticklabels(monthly_pos.index, rotation=45)
     ax2.spines['top'].set_visible(False)
     
-    plt.tight_layout()
+    # Combined legend for both axes
+    lines1, labels1 = ax2.get_legend_handles_labels()
+    lines2, labels2 = ax2_twin.get_legend_handles_labels()
+    ax2.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
+    
+    plt.tight_layout(rect=[0, 0, 1, 0.91])
     plt.savefig(os.path.join(CHARTS_DIR, '11_po_pipeline.png'),
                 bbox_inches='tight', facecolor='white')
     plt.close()
