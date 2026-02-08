@@ -16,8 +16,15 @@ def create_vendor_scorecard(po_df):
     """Vendor performance scorecard - OTD, lead time, spend, variance."""
     
     fig, axes = plt.subplots(2, 2, figsize=(16, 12), facecolor='white')
+    
+    # Get date range from the data for context
+    date_min = po_df['po_date'].min().strftime('%b %Y')
+    date_max = po_df['po_date'].max().strftime('%b %Y')
+    
     fig.suptitle('Vendor Performance Scorecard', fontsize=16,
-                 fontweight='bold', color=COLORS['text'])
+                 fontweight='bold', color=COLORS['text'], y=0.98)
+    fig.text(0.5, 0.95, f'{date_min} – {date_max}', ha='center',
+             fontsize=10, color=COLORS['text_light'], style='italic')
     
     received_pos = po_df[po_df['status'] == 'Received']
     
@@ -60,7 +67,7 @@ def create_vendor_scorecard(po_df):
     ax.axvline(x=0, color='black', linewidth=1)
     style_chart_basic(ax)
     
-    plt.tight_layout(rect=[0, 0, 1, 0.96])
+    plt.tight_layout(rect=[0, 0, 1, 0.93])
     plt.savefig(os.path.join(CHARTS_DIR, '08_vendor_scorecard.png'),
                 bbox_inches='tight', facecolor='white')
     plt.close()

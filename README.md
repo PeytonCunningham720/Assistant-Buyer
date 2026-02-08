@@ -49,14 +49,14 @@ This tool analyzes retail data and **produces easy-to-understand reports and cha
 
 ![In-Stock Rate by Gym](output/charts/05_instock_by_gym.png)
 
-**Sample insight:** *Movement Thornton and Movement Glen Burnie are below 40% in-stock rate, these locations should be prioritized in this week's allocation. Meanwhile, $7,969 in overstock inventory should be reviewed for transfers to understocked gyms.*
+**Sample insight:** *All 30+ gyms are below our target In-Stock Rate of 90%!.*
 
 <details>
 <summary><strong>📖 Key Terms</strong></summary>
 
 | Term | Definition | Calculation |
 |------|------------|-------------|
-| **In-Stock Rate** | Percentage of SKU-locations with inventory available to sell | `SKUs In Stock / Total SKUs × 100` |
+| **In-Stock Rate** | Percentage of SKU-locations with inventory available to sell | `SKUs In-Stock / Total SKUs * 100` |
 | **Weeks of Supply** | How long current inventory will last at current sales rate | `On-Hand Units / Avg Weekly Sales` |
 | **Overstock** | Inventory exceeding 12 weeks of supply — ties up capital | `Weeks of Supply > 12` |
 | **SKU-Location** | A unique product at a specific gym (e.g., "Tarantula size 42 at RiNo") | — |
@@ -75,7 +75,7 @@ This tool analyzes retail data and **produces easy-to-understand reports and cha
 
 ![Margin Analysis](output/charts/03_margin_analysis.png)
 
-**Sample insight:** *Climbing Shoes generate the highest revenue at $4.3M with a 50%+ gross margin. Monthly trends show peak sales in April-May and September-October, aligning with outdoor climbing season, this is when we should be best stocked.*
+**Sample insight:** *La Sportiva generated the greatest gross margin over the 12 month period (Feb 2025 - Jan 2026).*
 
 <details>
 <summary><strong>📖 Key Terms</strong></summary>
@@ -83,7 +83,7 @@ This tool analyzes retail data and **produces easy-to-understand reports and cha
 | Term | Definition | Calculation |
 |------|------------|-------------|
 | **Gross Margin $** | Dollar profit after subtracting product cost | `Revenue - Cost of Goods Sold` |
-| **Gross Margin %** | Percentage of revenue kept as profit | `(Revenue - Cost) / Revenue × 100` |
+| **Gross Margin %** | Percentage of revenue kept as profit | `(Revenue - Cost) / Revenue * 100` |
 | **Seasonality** | Predictable sales patterns tied to time of year | — |
 | **Chase Buy** | Additional order placed mid-season to restock fast sellers | — |
 
@@ -101,7 +101,7 @@ This tool analyzes retail data and **produces easy-to-understand reports and cha
 
 ![Vendor Scorecard](output/charts/08_vendor_scorecard.png)
 
-**Sample insight:** *Petzl leads vendor performance with 89.5% on-time delivery. Several vendors are below the 85% threshold and may need follow-up on PO confirmations and shipping commitments, exactly the kind of operational follow-up outlined in the job description.*
+**Sample insight:** *All vendors are below the 90% on time threshold.*
 
 <details>
 <summary><strong>📖 Key Terms</strong></summary>
